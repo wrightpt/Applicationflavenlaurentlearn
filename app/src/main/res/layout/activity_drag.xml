@@ -1,0 +1,35 @@
+<com.example.c.applicationflavenlaurentlearn.DragLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:draggable_panel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dragLayout">
+
+
+    <com.github.pedrovgs.DraggablePanel
+        android:id="@+id/draggable_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        draggable_panel:x_scale_factor="@dimen/x_scale_factor"
+        draggable_panel:y_scale_factor="@dimen/y_scale_factor"
+        draggable_panel:top_fragment_height="@dimen/top_fragment_height"
+        draggable_panel:top_fragment_margin_right="@dimen/top_fragment_margin"
+        draggable_panel:top_fragment_margin_bottom="@dimen/top_fragment_margin"
+        draggable_panel:enable_horizontal_alpha_effect="false"/>
+
+
+    <!--
+    <View
+            android:id="@+id/drag1"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="#AD78CC"/>
+-->
+    <View
+            android:id="@+id/drag2"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:background="#FF00FF"/>
+
+</com.example.c.applicationflavenlaurentlearn.DragLayout>

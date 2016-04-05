@@ -1,0 +1,88 @@
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:draggable_panel="http://schemas.android.com/apk/res-auto">
+
+    <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="list"/>
+
+
+    <com.example.c.applicationflavenlaurentlearn.YoutubeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dragLayout"
+            android:orientation="vertical">
+
+<!--
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:id="@+id/fragment">
+        </fragment>
+        -->
+
+        <!--
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+-->
+
+        <com.github.pedrovgs.DraggablePanel
+            android:id="@+id/draggable_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            draggable_panel:x_scale_factor="@dimen/x_scale_factor"
+            draggable_panel:y_scale_factor="@dimen/y_scale_factor"
+            draggable_panel:top_fragment_height="@dimen/top_fragment_height"
+            draggable_panel:top_fragment_margin_right="@dimen/top_fragment_margin"
+            draggable_panel:top_fragment_margin_bottom="@dimen/top_fragment_margin"
+            draggable_panel:enable_horizontal_alpha_effect="false"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/header"
+            android:layout_height="128dp">
+
+        </FrameLayout>
+
+<!--
+        <fragment
+            android:id="@+id/fragment_youtube"
+            android:name="com.example.c.applicationflavenlaurentlearn.YoutubeFragment"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+             />
+-->
+
+        <!--
+        <TextView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:fontFamily="sans-serif-thin"
+                android:textSize="25sp"
+                android:text="Drag me to the bottom"
+                android:tag="text"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:background="#AD78CC"/>
+-->
+        <TextView
+                android:id="@+id/desc"
+                android:tag="desc"
+                android:textSize="35sp"
+                android:gravity="center"
+                android:text="Loreum Loreum Loreum Loreum Loreum Loreum LoreumLoreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum Loreum"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF00FF"/>
+
+    </com.example.c.applicationflavenlaurentlearn.YoutubeLayout>
+</FrameLayout>
